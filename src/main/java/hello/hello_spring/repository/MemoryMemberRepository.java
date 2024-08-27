@@ -8,6 +8,7 @@ import java.util.*;
 
 @Repository
 public class MemoryMemberRepository implements MemberRepository{
+    //spring으로 bean으로 등록해줌
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
